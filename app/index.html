@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>FriendNets</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="#" style="color: white; font-family: 'Source Code Pro', monospace;"><b>FriendNets</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">About</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        </div>
+    </nav>
+
+    <div id="home" class="container mt-2">
+      <div class="row">
+        <div class="col-3">
+          <div class="card">
+            <img src="images/hkm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">hkm007</h5>
+              <p class="card-text">Tech Geek<br>Coding Enthusiast<br>Loves Algorithms</p>
+              <span class="badge badge-pill badge-success" id="totalFriends"></span>
+              <span class="badge badge-pill badge-success" id="totalSuggestions">New <span class="badge badge-light">3</span></span><br><br>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="con()">Your Connections</button>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="sug()">Friend Suggestions</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-9" id="list">
+          <div id="friends">
+            <center><h3 style="font-family: 'Inconsolata', monospace;">Welcome to FriendNets</h3></center><hr><br>
+            <center><img src="images/Graph.png"></center><br>
+            <center><h5>Best Social Networking Platform to connect with your friends.</h5></center>
+          </div>
+        
+          <div id="suggests">
+              <h3>Friend Suggestions</h3><hr>
+              <div class="card mb-3" style="max-width: 100%">
+                <div class="row no-gutters">
+                  <div class="col-md-3">
+                    <img src="images/p.jpg" class="card-img" alt="..." style="border-radius: 50%; max-width: 200px">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Deepraj</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Mutual Friends: 3</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <footer class="mt-2">
+      <center><p style="color: red;"><b><i>Developed by Himanshu Mishra</i></b></p></center>
+      <center><p style="color: red;">Contact - hkm0072001@gmail.com</p></center>
+    </footer>
+
+    <script src="main.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
